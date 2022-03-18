@@ -409,3 +409,21 @@ img{
 .send_input::placeholder{
     font-family: var(--body-font);
 }
+
+/*=== footer ===*/
+
+.footer_container{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer_logo{
+    color: var(--title-color);
+}
+
+.footer_title{
+    margin-bottom: var(--mb-2);
+}
+
+.footer_logo, .footer_title{
+    font-size: var(--h3-font-size);
+}
