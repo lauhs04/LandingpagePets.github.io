@@ -427,3 +427,157 @@ img{
 .footer_logo, .footer_title{
     font-size: var(--h3-font-size);
 }
+
+.footer_link{
+    display: block;
+    /*margin-left: .75rem;*/
+    color: var(--text-color);
+}
+
+.footer_link:hover{
+    color: var(--first-color);
+}
+
+.footer_social{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-right: var(--mb-3);
+}
+
+.footer_social:hover{
+    color: var(--first-color);
+}
+
+.footer_copy{
+    text-align: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-top: 4rem;
+}
+
+/*==== media queries ===*/
+
+/* para full-screen imágenes en pantallas pequeñas*/
+
+@media screen and (max-width: 359px) {
+    .home_img,
+    .share_img,
+    .accesory_img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 576px){
+    .home_container,
+    .share_container,
+    .send_container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .home_container{
+        padding: 5rem 0 0;
+    }
+
+    .home_img{
+        order: 1;
+    }
+
+    .section-title-center,
+    .share_data,
+    .send_description{
+        text-align: initial;
+    }
+
+    .home_img,
+    .share_img{
+        width: 100%;
+    }
+
+    .share_img{
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 576px){
+    body{
+        margin:0;
+    }
+
+    .section{
+        padding-top: 7rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav_list{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_item{
+        margin-left: var(--mb-5);
+        margin-bottom: 0;
+    }
+
+    .nav_toggle{
+        display: none;
+    }
+
+    .home_container{
+        padding: 7rem 2rem 0;
+    }
+
+    .share_container{
+        padding: 0 2rem;
+    }
+
+    .accesory_container{
+        grid-template-columns: repeat(3, 224px);
+        justify-content: center;
+    }
+
+    .accesory_content{
+    padding: .5 1.5rem 1.5rem;
+    }
+
+    .accesory_img{
+        width: 120px;
+        margin-bottom: var(--mb-1);
+    }
+
+    .accesory_title, .accesory_category{
+        text-align: initial;
+    }
+
+    .accesory_button{
+        padding: .75rem;
+    }
+
+    .send{
+        background: none;
+    }
+
+    .send_container{
+        background-color: var(--first-color-send);
+        padding: 2rem;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home_img, .share_img, .send_img {
+        width: 469px;
+    }
+
+    .home_container, .share_container, .send_container{
+        column-gap: 5rem;
+    }
+}
