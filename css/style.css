@@ -39,26 +39,7 @@
     --z-fixed: 100;
 }
 
-/*=== variables dark theme === */
 
-body.dark-theme{
-    
-    --first-color-send: #161212;
-    --title-color: #f3f1f1;
-    --text-color: #d1c7c8;
-    --body-color: #251d1e;
-    --container-color: #302728;
-}
-
-/*=== Button Dark/Light ===*/
-.change-theme{
-    position: absolute;
-    right: 1.5rem;
-    top: 2.2rem;
-    display: flex;
-    font-size: 2rem;
-    cursor: pointer;
-}
 
 @media screen and (min-width: 968px) {
     :root {
@@ -77,6 +58,27 @@ body.dark-theme{
 
 html{
     scroll-behavior: smooth;
+}
+
+/*=== variables dark theme === */
+
+body.dark-theme{
+    
+    --first-color-send: #8b1b1b;
+    --title-color: #f3f1f1;
+    --text-color: #d1c7c8;
+    --body-color: #251d1e;
+    --container-color: #302728;
+}
+
+/*=== Button Dark/Light ===*/
+.change-theme{
+    position: absolute;
+    right: 1.5rem;
+    top: 2.2rem;
+    display: flex;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 body{
@@ -187,6 +189,10 @@ img{
 
 .nav_logo:hover{
     color: var(--first-color);
+}
+
+.nav_link{
+    transition: .3s;
 }
 
 .nav_link:hover{
@@ -450,7 +456,7 @@ img{
 }
 
 .footer_link{
-    display: block;
+    display: inline-block;
     /*margin-left: .75rem;*/
     color: var(--text-color);
 }
@@ -490,8 +496,7 @@ img{
 
 @media screen and (min-width: 576px){
     .home_container,
-    .share_container,
-    .send_container{
+    .share_container{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
@@ -520,7 +525,7 @@ img{
     }
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 768px){
     body{
         margin:0;
     }
@@ -545,6 +550,11 @@ img{
 
     .nav_toggle{
         display: none;
+    }
+
+    .change-theme{
+        position: initial;
+        margin-left: var(--mb-4);
     }
 
     .home_container{

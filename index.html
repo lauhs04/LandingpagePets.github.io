@@ -1,24 +1,27 @@
 <!DOCTYPE html>
     <html lang="es">
+
         <head>
             <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, inicial-scale=1, maximum-scale=1">
+            <meta name="viewport" content="width=device-width, inicial-scale=1, maximum-scale=1.0">
             <!--===Box Icons===-->
             <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
             <!--===CSS===-->
             <link rel="stylesheet" href="./css/style.css">
-            <title>Landing page Pets</title>
+            <title>Responsive landing page Pets</title>
         </head>
 
         <body>
+
             <!--===Scroll top===-->
-            <a href="#" class="scrolltop show-scroll" id="scroll-top">
+            <a href="#" class="scrolltop" id="scroll-top"> <!--show-scroll ????-->
                 <i class='bx bx-up-arrow-alt scrolltop_icon'></i>
             </a>
+
             <!--===Header===-->
             <header class="l-header" id="header">
                 <nav class="nav bd-container">
-                  <a href="#" class="nav_logo">Pets Gift</a>
+                  <a href="#" class="nav_logo">Tienda de Regalos</a>
                   <div class="nav_menu" id="nav-menu">
                       <ul class="nav_list">
                           <li class="nav_item"><a href="#inicio" class="nav_link active-link">Inicio</a></li>
@@ -36,6 +39,7 @@
                   </div>
                 </nav>
             </header>
+
             <main class="l-main">
                 <!--inicio-->
                 <section class="home" id="home">
@@ -57,19 +61,22 @@
                         </div>
                     </div>
                 </section>
+
                 <!--regala-->
-                <section class="share section bd-container" id="regala">
+                <section class="share section bd-container" id="share"> <!--cambié id regala a id share, modificar el resto-->
                     <div class="share_container bd-grid">
                         <div class="share_data">
                             <h2 class="section-title-center">Regálale a Tu Mascota lo Mejor </h2>
                             <p class="share_description"> Premia a tu pequeño con el mejor regalo, demuestrale tu amor al consentirlo con la gran variedad de obsequios que tenemos</p>
                             <a href="#" class="button">Regala lo mejor</a>
                             </div>
+
                             <div class="share_img">
                                 <img src="./img/regala.png" alt="">
                             </div>
                     </div>
                 </section>
+                
                 <!--juguetes-->
                 <section class="toys section bd-container" id="toys">
                     <h2 class="section-title">Echa un vistazo a nuestra colección de juguetes</h2>
@@ -97,7 +104,7 @@
                     </div>
                 </section>
                 <!--Accesorios-->
-                <section class="accesory section bd-container" id="accesorios">
+                <section class="accesory section bd-container" id="accesory">
                     <h2 class="section-title">Accesorios que te facilitarán la vida</h2>
 
                     <div class="accesory_container bd-grid">
@@ -133,7 +140,7 @@
                             <h3 class="accesory_title">Correas de gato</h3>
                             <span class="accesory_category">Accesorios</span>
                             <span class="accesory_precio">$25.000</span>
-                            <a href="#" class="button accesory_button"><i class='bx bx-heart'></i></a>
+                            <a href="#" class="button accesory_button ""><i class='bx bx-heart'></i></a>
                         </div>
                     </div>
         </section>
@@ -146,7 +153,7 @@
                         <form action="">
                             <div class="send_direction">
                                 <input type="text" placeholder="Dirección de tu casa" class="send_input">
-                                <a href="" class="button">Enviar</a>
+                                <a href="#" class="button" onclick="buy">Enviar</a>
                             </div>
                         </form>
                     </div>
