@@ -35,7 +35,7 @@ function scrollActive(){
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
         }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
@@ -96,18 +96,18 @@ const sr = ScrollReveal({
     reset: true,
 });
 
-sr.reveal(`.home__data, .home__img, 
-           .decoration__data,
-           .accessory__content,
-           .footer__content`, {
+sr.reveal(`.home_data, .home_img, 
+           .decoration_data,
+           .accesory_content,
+           .footer_content`, {
     origin: 'top',
     interval: 200,
 })
 
-sr.reveal(`.share__img, .send__content`, {
+sr.reveal(`.share_img, .send_content`, {
     origin: 'left'
 })
 
-sr.reveal(`.share__data, .send__img`, {
+sr.reveal(`.share_data, .send_img`, {
     origin: 'right'
 })
