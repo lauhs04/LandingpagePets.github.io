@@ -293,7 +293,7 @@ img{
 }
 
 .button:hover{
-    background-color: var(--first-color);
+    background-color: var(--first-color-alt);
 }
 
 .button-link{
@@ -322,11 +322,11 @@ img{
 }
 
 /*===decoration===*/
-.toys_container{
+.decoration_container{
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.toys_data{
+.decoration_data{
     text-align: center;
     padding: 1rem 1rem 2rem;
     background-color: var(--container-color);
@@ -334,15 +334,15 @@ img{
     border-radius: 1rem;
 }
 
-.toys_data:hover{
+.decoration_data:hover{
     box-shadow: 0 3px 12px rgba(65,11,16,.15);
 }
 
-.toys_img{
+.decoration_img{
     width: 180px;
 }
 
-.toys_title{
+.decoration_title{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-2);
 }
@@ -387,7 +387,7 @@ img{
     color: var(--text-color-light);
 }
 
-.accesory_precio{
+.accesory_preci{
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
     margin-left: 1rem;
@@ -420,6 +420,7 @@ img{
 
 .send_direction{
     display:flex;
+    justify-content: space-between;
     background-color: #fff;
     padding: .5rem;
     border-radius: .5rem;
@@ -457,7 +458,7 @@ img{
 
 .footer_link{
     display: inline-block;
-    /*margin-left: .75rem;*/
+    margin-left: .75rem;
     color: var(--text-color);
 }
 
@@ -496,7 +497,8 @@ img{
 
 @media screen and (min-width: 576px){
     .home_container,
-    .share_container{
+    .share_container,
+    .send_container{
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
@@ -571,7 +573,7 @@ img{
     }
 
     .accesory_content{
-    padding: .5 1.5rem 1.5rem;
+    padding: .5rem 1.5rem 1.5rem;
     }
 
     .accesory_img{
