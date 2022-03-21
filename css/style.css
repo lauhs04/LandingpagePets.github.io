@@ -64,7 +64,7 @@ html{
 
 body.dark-theme{
     
-    --first-color-send: #8b1b1b;
+    --first-color-send: #91dbdb;
     --title-color: #f3f1f1;
     --text-color: #d1c7c8;
     --body-color: #251d1e;
@@ -114,6 +114,7 @@ img{
     height: auto;
 }
 
+/*class css*/
 .section{
     padding: 4rem 0 2rem;
 }
@@ -144,7 +145,7 @@ img{
 
 .l-header{
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: var(--z-fized);
@@ -215,7 +216,7 @@ img{
 }
 
 .active-link::before{
-    content: "";
+    content: '';
     position: absolute;
     bottom: -.75rem;
     left: 45%;
@@ -339,12 +340,12 @@ img{
 }
 
 .decoration_img{
-    width: 180px;
+    width: 250px;
 }
 
 .decoration_title{
     font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1);
 }
 
 /*===accesorios===*/
@@ -368,7 +369,7 @@ img{
 }
 
 .accesory_img{
-    width: 110px;
+    width: 200px;
     justify-self: center; /* Ojo*/
     margin-bottom: .25rem;
 }
@@ -390,7 +391,7 @@ img{
 .accesory_preci{
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
-    margin-left: 1rem;
+    
 }
 
 .accesory_button{
@@ -427,7 +428,7 @@ img{
 }
 
 .send_input{
-    width: 90%;
+    width: 70%;
     outline: none;
     border: none;
     font-size: var(--normal-font-size);
@@ -438,6 +439,10 @@ img{
     font-family: var(--body-font);
 }
 
+.send_img{
+    width: 280px;
+    justify-self: center;
+}
 /*=== footer ===*/
 
 .footer_container{
@@ -458,7 +463,7 @@ img{
 
 .footer_link{
     display: inline-block;
-    margin-left: .75rem;
+    margin-bottom: .75rem;
     color: var(--text-color);
 }
 
@@ -490,7 +495,7 @@ img{
 @media screen and (max-width: 359px) {
     .home_img,
     .share_img,
-    .accesory_img{
+    .send_img{
         width: 100%;
     }
 }
@@ -518,7 +523,8 @@ img{
     }
 
     .home_img,
-    .share_img{
+    .share_img,
+    .send_img{
         width: 100%;
     }
 
@@ -606,11 +612,9 @@ img{
         margin-right: auto;
     }
 
-    .home_img, .share_img, .send_img {
+    .home_img, .share_img, .send_img, .send_img {
         width: 469px;
     }
 
-    .home_container, .share_container, .send_container{
-        column-gap: 5rem;
-    }
+    
 }
