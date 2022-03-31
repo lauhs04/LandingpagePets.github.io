@@ -128,7 +128,7 @@ img{
   overflow: hidden;
 }
 
-.bd-container{
+.container{
   max-width: 968px;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
@@ -598,7 +598,7 @@ img{
 }
 
 @media screen and (min-width: 968px){
-  .bd-container{
+  .container{
     margin-left: auto;
     margin-right: auto;
   }
