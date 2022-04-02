@@ -135,7 +135,7 @@ img{
   margin-right: var(--mb-3);
 }
 
-.bd-grid{
+.grid{
   display: grid;
   gap: 1.5rem;
 }
